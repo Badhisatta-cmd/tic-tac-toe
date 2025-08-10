@@ -13,7 +13,7 @@ const winningCombos = [
     [2, 4, 6]
 ];
 
-let turnO = true;
+let turnO = false;
 
 let checkWinner = () => {
     for (let i of winningCombos) {
