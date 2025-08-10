@@ -20,10 +20,10 @@ let checkWinner = () => {
         if (buttons[i[0]].innerText != "" && buttons[i[1]].innerText != "" && buttons[i[2]].innerText != "") {
             if ((buttons[i[0]].innerText === buttons[i[1]].innerText) && (buttons[i[1]].innerText === buttons[i[2]].innerText)) {
                 display.innerText = `Player ${buttons[i[0]].innerText} wins!`;
-                alert(`Player ${buttons[i[0]].innerText} wins!`);
                 buttons[i[0]].style.backgroundColor = "green";
                 buttons[i[1]].style.backgroundColor = "green";
                 buttons[i[2]].style.backgroundColor = "green";
+                alert(`Player ${buttons[i[0]].innerText} wins!`);
                 buttons.forEach((button) => {
                     button.disabled = true;
                 });
@@ -61,4 +61,5 @@ resetButton.addEventListener("click", () => {
         button.innerText = "";
         button.style.backgroundColor = "tan";
     })
+
 })
