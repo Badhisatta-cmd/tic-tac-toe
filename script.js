@@ -27,6 +27,7 @@ let checkWinner = () => {
                 buttons.forEach((button) => {
                     button.disabled = true;
                 });
+                let turnO = false;
                 return;
             }
         }
