@@ -56,7 +56,7 @@ buttons.forEach((button) => {
 
 resetButton.addEventListener("click", () => {
     display.innerText = "";
-    turnO = true;
+    turnO = false;
     buttons.forEach(button => {
         button.disabled = false;
         button.innerText = "";
