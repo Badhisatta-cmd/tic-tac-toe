@@ -23,7 +23,7 @@ let checkWinner = () => {
                 buttons[i[0]].style.backgroundColor = "green";
                 buttons[i[1]].style.backgroundColor = "green";
                 buttons[i[2]].style.backgroundColor = "green";
-                alert(`Player ${buttons[i[0]].innerText} wins!`);
+                //alert(`Player ${buttons[i[0]].innerText} wins!`);
                 buttons.forEach((button) => {
                     button.disabled = true;
                 });
